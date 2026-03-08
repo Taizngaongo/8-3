@@ -1,0 +1,171 @@
+/* FontAwesome Base Rules */
+.fa, .fas, .far, .fab, .fal, .fad {
+    font-family: "FontAwesome", "Font Awesome 5 Free", "Font Awesome 5 Pro", sans-serif !important;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: inherit;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.fas { font-weight: 900; }
+.far { font-weight: 400; }
+.fab { font-weight: 400; }
+
+/* FontAwesome Before Rules */
+.fa:before, .fas:before, .far:before, .fab:before {
+    display: inline-block;
+    font-family: "FontAwesome", "Font Awesome 5 Free", "Font Awesome 5 Pro", sans-serif !important;
+    font-weight: 900;
+    font-style: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Specific icon selectors */
+[class^="fa-"]:before, [class*=" fa-"]:before {
+    font-family: "FontAwesome", "Font Awesome 5 Free", "Font Awesome 5 Pro", sans-serif !important;
+    font-weight: 900;
+    font-style: normal;
+    display: inline-block;
+}
+
+/* Font Awesome 6 Free font faces */
+@font-face {
+    font-family: "Font Awesome 6 Free";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../fonts/fa-regular-400.woff2") format("woff2"),
+         url("../fonts/fa-regular-400.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Font Awesome 6 Free";
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url("../fonts/fa-solid-900.woff2") format("woff2"),
+         url("../fonts/fa-solid-900.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Font Awesome 6 Brands";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../fonts/fa-brands-400.woff2") format("woff2"),
+         url("../fonts/fa-brands-400.ttf") format("truetype");
+}
+
+/* Clean icon rules - Use Font Awesome 6 Free */
+[class^="icon-"]:before, [class*=" icon-"]:before { font-family: "FontAwesome", "fontello", sans-serif !important; 
+    font-family: "Font Awesome 6 Free" !important;
+    font-style: normal !important;
+    font-weight: 900 !important; /* Solid weight */
+    display: inline-block !important;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    margin-left: .2em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Map to FontAwesome codes */
+.icon-search:before {
+    content: '\f002' !important; /* search */
+}
+
+.icon-menu:before {
+    content: '\f0c9' !important; /* bars */
+}
+
+.icon-angle-up:before {
+    content: '\f106' !important; /* angle-up */
+}
+
+.icon-clock:before { content: '\f017' !important; } /* clock */
+.icon-flow-cross:before { content: '\f00d' !important; } /* times */
+.icon-expand:before { content: '\f065' !important; } /* expand */
+.icon-envelop:before { content: '\f0e0' !important; } /* envelope */
+.icon-eye:before { content: '\f06e' !important; } /* eye */
+.icon-eye-off:before { content: '\f070' !important; } /* eye-slash */
+.icon-feed:before { content: '\f09e' !important; } /* rss */
+.icon-gift:before { content: '\f06b' !important; } /* gift */
+.icon-heart:before { content: '\f004' !important; } /* heart */
+.icon-heart-o:before { content: '\f08a' !important; } /* heart-o */
+.icon-lock:before { content: '\f023' !important; } /* lock */
+.icon-checkmark:before { content: '\f00c' !important; } /* check */
+.icon-plus:before { content: '\f067' !important; } /* plus */
+.icon-cross:before { content: '\f00d' !important; } /* times */
+.icon-phone:before { content: '\f095' !important; } /* phone */
+.icon-play:before { content: '\f04b' !important; } /* play */
+.icon-500px:before { content: '\f26e' !important; } /* 500px */
+.icon-star:before { content: '\f005' !important; } /* star */
+.icon-star-o:before { content: '\f006' !important; } /* star-o */
+.icon-tag:before { content: '\f02b' !important; } /* tag */
+.icon-user:before { content: '\f007' !important; } /* user */
+.icon-x:before { content: '\f00d' !important; } /* times */
+.icon-discord:before { content: '\f392' !important; } /* discord */
+.icon-tiktok:before { content: '\f17a' !important; } /* music, approximate */
+.icon-shopping-cart:before { content: '\f07a' !important; } /* shopping-cart */
+.icon-shopping-bag:before { content: '\f290' !important; } /* shopping-bag */
+.icon-twitter:before { content: '\f099' !important; } /* twitter */
+.icon-facebook:before { content: '\f09a' !important; } /* facebook */
+.icon-certificate:before { content: '\f0a3' !important; } /* certificate */
+.icon-google-plus:before { content: '\f0d5' !important; } /* google-plus */
+.icon-linkedin:before { content: '\f0e1' !important; } /* linkedin */
+.icon-chat:before { content: '\f0e6' !important; } /* comment */
+.icon-angle-left:before { content: '\f104' !important; } /* angle-left */
+.icon-angle-right:before { content: '\f105' !important; } /* angle-right */
+.icon-angle-down:before { content: '\f107' !important; } /* angle-down */
+.icon-youtube:before { content: '\f16a' !important; } /* youtube */
+.icon-instagram:before { content: '\f16d' !important; } /* instagram */
+.icon-flickr:before { content: '\f16e' !important; } /* flickr */
+.icon-tumblr:before { content: '\f173' !important; } /* tumblr */
+.icon-dribbble:before { content: '\f17d' !important; } /* dribbble */
+.icon-skype:before { content: '\f17e' !important; } /* skype */
+.icon-vk:before { content: '\f189' !important; } /* vk */
+.icon-equalizer:before { content: '\f1de' !important; } /* sliders */
+.icon-twitch:before { content: '\f1e8' !important; } /* twitch */
+.icon-pinterest:before { content: '\f231' !important; } /* pinterest */
+.icon-whatsapp:before { content: '\f232' !important; } /* whatsapp */
+.icon-snapchat:before { content: '\f2ac' !important; } /* snapchat */
+.icon-user-o:before { content: '\f2c0' !important; } /* user-o */
+.icon-telegram:before { content: '\f2c6' !important; } /* telegram */
+.icon-map-pin-fill:before { content: '\f041' !important; } /* map-marker */
+.icon-pen-alt-fill:before { content: '\f040' !important; } /* pencil */
+/* Missing FontAwesome Icons - Auto-generated */
+.fa-rendact:before { content: "\f1f3"; font-family: "FontAwesome", "Font Awesome 5 Free", sans-serif !important; font-weight: 900; }
+.fa-wpressr:before { content: "\f1f4"; font-family: "FontAwesome", "Font Awesome 5 Free", sans-serif !important; font-weight: 900; }
+.fa-home:before { content: "\f015"; font-family: "FontAwesome", "Font Awesome 5 Free", sans-serif !important; font-weight: 900; }
+.fa-user:before { content: "\f007"; font-family: "FontAwesome", "Font Awesome 5 Free", sans-serif !important; font-weight: 900; }
+.fa-envelope:before { content: "\f0e0"; font-family: "FontAwesome", "Font Awesome 5 Free", sans-serif !important; font-weight: 900; }
+.fa-phone:before { content: "\f095"; font-family: "FontAwesome", "Font Awesome 5 Free", sans-serif !important; font-weight: 900; }
+.fa-facebook:before { content: "\f09a"; font-family: "FontAwesome", "Font Awesome 5 Free", sans-serif !important; font-weight: 900; }
+.fa-twitter:before { content: "\f099"; font-family: "FontAwesome", "Font Awesome 5 Free", sans-serif !important; font-weight: 900; }
+.fa-instagram:before { content: "\f16d"; font-family: "FontAwesome", "Font Awesome 5 Free", sans-serif !important; font-weight: 900; }
+.fa-youtube:before { content: "\f167"; font-family: "FontAwesome", "Font Awesome 5 Free", sans-serif !important; font-weight: 900; }
+.fa-linkedin:before { content: "\f0e1"; font-family: "FontAwesome", "Font Awesome 5 Free", sans-serif !important; font-weight: 900; }
+.fa-whatsapp:before { content: "\f232"; font-family: "FontAwesome", "Font Awesome 5 Free", sans-serif !important; font-weight: 900; }
+.fa-telegram:before { content: "\f2c6"; font-family: "FontAwesome", "Font Awesome 5 Free", sans-serif !important; font-weight: 900; }
+.fa-search:before { content: "\f002"; font-family: "FontAwesome", "Font Awesome 5 Free", sans-serif !important; font-weight: 900; }
+.fa-shopping-cart:before { content: "\f07a"; font-family: "FontAwesome", "Font Awesome 5 Free", sans-serif !important; font-weight: 900; }
+.fa-heart:before { content: "\f004"; font-family: "FontAwesome", "Font Awesome 5 Free", sans-serif !important; font-weight: 900; }
+.fa-star:before { content: "\f005"; font-family: "FontAwesome", "Font Awesome 5 Free", sans-serif !important; font-weight: 900; }
+.fa-check:before { content: "\f00c"; font-family: "FontAwesome", "Font Awesome 5 Free", sans-serif !important; font-weight: 900; }
+.fa-times:before { content: "\f00d"; font-family: "FontAwesome", "Font Awesome 5 Free", sans-serif !important; font-weight: 900; }
+.fa-arrow-right:before { content: "\f061"; font-family: "FontAwesome", "Font Awesome 5 Free", sans-serif !important; font-weight: 900; }
+.fa-arrow-left:before { content: "\f060"; font-family: "FontAwesome", "Font Awesome 5 Free", sans-serif !important; font-weight: 900; }
+.fa-menu:before { content: "\f0c9"; font-family: "FontAwesome", "Font Awesome 5 Free", sans-serif !important; font-weight: 900; }
+.fa-bars:before { content: "\f0c9"; font-family: "FontAwesome", "Font Awesome 5 Free", sans-serif !important; font-weight: 900; }
+/* Fallback font families - CORS prevention */
+[class^="icon-"]:before, [class*=" icon-"]:before { font-family: 'fontello', Arial, sans-serif !important; }
+.fa, .fas, .far, .fab { font-family: 'Font Awesome 6 Free', Arial, sans-serif !important; }
+.fa-solid, .fa-regular, .fa-brands { font-family: 'Font Awesome 6 Free', Arial, sans-serif !important; }

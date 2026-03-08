@@ -1,0 +1,65 @@
+/* FontAwesome Base Rules */
+.fa, .fas, .far, .fab, .fal, .fad {
+    font-family: "FontAwesome", "Font Awesome 5 Free", "Font Awesome 5 Pro", sans-serif !important;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: inherit;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.fas { font-weight: 900; }
+.far { font-weight: 400; }
+.fab { font-weight: 400; }
+
+/* FontAwesome Before Rules */
+.fa:before, .fas:before, .far:before, .fab:before {
+    display: inline-block;
+    font-family: "FontAwesome", "Font Awesome 5 Free", "Font Awesome 5 Pro", sans-serif !important;
+    font-weight: 900;
+    font-style: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Specific icon selectors */
+[class^="fa-"]:before, [class*=" fa-"]:before {
+    font-family: "FontAwesome", "Font Awesome 5 Free", "Font Awesome 5 Pro", sans-serif !important;
+    font-weight: 900;
+    font-style: normal;
+    display: inline-block;
+}
+
+
+/* Complete FontAwesome Icon Set */
+.fa-rendact:before { content: "\f1f3"; }
+.fa-wpressr:before { content: "\f1f4"; }
+.fa-home:before { content: "\f015"; }
+.fa-user:before { content: "\f007"; }
+.fa-envelope:before { content: "\f0e0"; }
+.fa-phone:before { content: "\f095"; }
+.fa-facebook:before { content: "\f09a"; }
+.fa-twitter:before { content: "\f099"; }
+.fa-instagram:before { content: "\f16d"; }
+.fa-youtube:before { content: "\f167"; }
+.fa-linkedin:before { content: "\f0e1"; }
+.fa-whatsapp:before { content: "\f232"; }
+.fa-telegram:before { content: "\f2c6"; }
+.fa-search:before { content: "\f002"; }
+.fa-shopping-cart:before { content: "\f07a"; }
+.fa-heart:before { content: "\f004"; }
+.fa-star:before { content: "\f005"; }
+.fa-check:before { content: "\f00c"; }
+.fa-times:before { content: "\f00d"; }
+.fa-arrow-right:before { content: "\f061"; }
+.fa-arrow-left:before { content: "\f060"; }
+.fa-menu:before { content: "\f0c9"; }
+.fa-bars:before { content: "\f0c9"; }
+
+/* Generic Icon Fallback */
+[class^="icon-"]:before, [class*=" icon-"]:before { font-family: "fontello", "FontAwesome", sans-serif !important; font-style: normal; font-weight: normal; speak: none; display: inline-block; text-decoration: inherit; width: 1em; margin-right: .2em; text-align: center; font-variant: normal; text-transform: none; line-height: 1em; margin-left: .2em; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+/* Fallback font families - CORS prevention */
+[class^="icon-"]:before, [class*=" icon-"]:before { font-family: 'fontello', Arial, sans-serif !important; }
+.fa, .fas, .far, .fab { font-family: 'Font Awesome 6 Free', Arial, sans-serif !important; }
+.fa-solid, .fa-regular, .fa-brands { font-family: 'Font Awesome 6 Free', Arial, sans-serif !important; }

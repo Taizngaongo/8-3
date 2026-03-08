@@ -1,0 +1,84 @@
+/* Local Font Definitions - Prevent CORS */
+
+@font-face {
+    font-family: 'Font Awesome 6 Free';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url('../fonts/fa-solid-900.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Font Awesome 6 Free';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/fa-regular-400.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Font Awesome 6 Brands';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/fa-brands-400.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'fontello';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/fontello.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'FontAwesome';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/fa-solid-900.woff2') format('woff2');
+}
+
+/* Complete fallback to prevent missing icons */
+.fa, .fas, .far, .fab, .fal, .fad {
+    font-family: 'Font Awesome 6 Free', 'FontAwesome', Arial, sans-serif !important;
+    font-weight: 900;
+    font-style: normal !important;
+    text-decoration: inherit;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: 'fontello', 'Font Awesome 6 Free', Arial, sans-serif !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    display: inline-block !important;
+    text-decoration: inherit;
+    width: 1em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Basic icon content fallbacks */
+.fa-search:before, .icon-search:before { content: '\f002' !important; }
+.fa-home:before, .icon-home:before { content: '\f015' !important; }
+.fa-user:before, .icon-user:before { content: '\f007' !important; }
+.fa-envelope:before, .icon-envelope:before { content: '\f0e0' !important; }
+.fa-phone:before, .icon-phone:before { content: '\f095' !important; }
+.fa-facebook:before, .icon-facebook:before { content: '\f09a' !important; }
+.fa-twitter:before, .icon-twitter:before { content: '\f099' !important; }
+.fa-instagram:before, .icon-instagram:before { content: '\f16d' !important; }
+.fa-whatsapp:before, .icon-whatsapp:before { content: '\f232' !important; }
+.fa-bars:before, .fa-menu:before, .icon-menu:before { content: '\f0c9' !important; }
+.fa-heart:before, .icon-heart:before { content: '\f004' !important; }
+.fa-star:before, .icon-star:before { content: '\f005' !important; }
+.fa-check:before, .icon-check:before { content: '\f00c' !important; }
+.fa-times:before, .icon-times:before { content: '\f00d' !important; }
+.fa-arrow-right:before, .icon-arrow-right:before { content: '\f061' !important; }
+.fa-arrow-left:before, .icon-arrow-left:before { content: '\f060' !important; }
